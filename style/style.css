@@ -1,0 +1,241 @@
+@font-face { 
+    font-family: 'TTLakes'; 
+    font-style: normal; 
+    font-weight: 100; 
+    src: local('TTLakes-regular'), 
+    url('/assets/font/TTLakes-Regular.ttf'), 
+    url('/assets/font/TTLakes-Regular.woff'); 
+    color: #7E7E82;
+} 
+
+header {
+    font-family: TTLakes;
+    font-size: 16;
+    height: 60px;
+    margin-left: 12px;
+    color: #7E7E82;
+    background: linear-gradient(to right, #F8F8F8, white);
+}
+
+.span1 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+body {
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+}
+
+.span1 {
+    font-family: TTlakes;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    margin-left: 10px;
+}
+
+button {
+    height: 72px;
+    width: 224px;
+    margin: 10px;
+    margin-left: 12px;
+    background-color: white;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+.lenovo-img {
+    padding-right: 50px;
+    padding-bottom: 3px;
+}
+
+.go-img {
+    padding-right: 3px;
+}
+
+.go-img2 {
+    padding-right: 3px;
+    padding-bottom: 7px;
+}
+
+.samsung-img {
+    padding-right: 40px;
+}
+
+.apple-img {
+    padding-right: 113px;
+}
+
+.bosh-img {
+    padding-right: 32px;
+    padding-bottom: 4px;
+}
+
+.view-img {
+    padding-right: 32px;
+    padding-bottom: 9px;
+}
+
+.hp-img {
+    padding-right: 105px;
+}
+
+.acer-img {
+    padding-right: 60px;
+    padding-bottom: 5px;
+}
+
+.sony-img {
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
+
+.hide-div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.nodisplay {
+    display: none;
+}
+
+.hider {
+    font-family: TTLakes;
+    border: transparent;
+    background-color: transparent;
+    font-weight: bold;
+    width: 120px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 30px;
+    bottom: 7px;
+    display: inline;
+}
+
+.hider-txt {
+    position: relative;
+    right: 20px;
+    padding: 0;
+}
+
+.input-hide {
+    margin-left: 15px;
+    position: relative;
+    z-index: 99;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.swiper {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+}
+.slider-container {
+    margin-left: 10px;
+}
+
+.swiper-wrapper {
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.swiper-slide button {
+    width: 246px;
+    height: 72px;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+@media (min-width: 1024px) {
+    .viewsonic2 {
+        display: none;
+    }
+    .sony2 {
+        display: none;
+    }
+    .viewsonic {
+        display: show;
+    }
+    .sony {
+        display: show;
+    }
+    .main {
+        display: show;
+    }
+    .swiper {
+        display: none !important;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+
+}
+
+@media (min-width: 508px) and (max-width: 1023px){
+    .viewsonic2 {
+        display: show;
+    }
+    .sony2 {
+        display: show;
+    }
+    .viewsonic {
+        display: none;
+    }
+    .sony {
+        display: none;
+    }
+    .main {
+        display: show;
+    }
+    .swiper{
+        display: none !important; 
+    }
+    .swiper-pagination {
+        display: none;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 507px) {
+    .hide-div {
+        display: none;
+    }
+    .input-hide::before {
+        display: none;
+    }
+    .hider {
+        display: none;
+    }
+    .main {
+        display: none;
+    }
+    .swiper {
+        display: show;
+    }
+    .input-hide {
+        display: none;
+    }
+}
